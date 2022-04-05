@@ -13,6 +13,10 @@
 		73328CBF27FC924A000CB2A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73328CBE27FC924A000CB2A5 /* Preview Assets.xcassets */; };
 		73328CC127FC924A000CB2A5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73328CC027FC924A000CB2A5 /* Persistence.swift */; };
 		73328CC427FC924A000CB2A5 /* Paper_Dice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73328CC227FC924A000CB2A5 /* Paper_Dice.xcdatamodeld */; };
+		73328CCD27FC938B000CB2A5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73328CCC27FC938B000CB2A5 /* HomeView.swift */; };
+		73826EB027FC9743007F8F9E /* DiceBagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73826EAF27FC9743007F8F9E /* DiceBagView.swift */; };
+		73826EB227FC9CE1007F8F9E /* HomeDiceBagList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73826EB127FC9CE1007F8F9E /* HomeDiceBagList.swift */; };
+		73826EB527FCB7C7007F8F9E /* SlideOverCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73826EB427FCB7C7007F8F9E /* SlideOverCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		73328CBE27FC924A000CB2A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		73328CC027FC924A000CB2A5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		73328CC327FC924A000CB2A5 /* Paper_Dice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Paper_Dice.xcdatamodel; sourceTree = "<group>"; };
+		73328CCC27FC938B000CB2A5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		73826EAF27FC9743007F8F9E /* DiceBagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceBagView.swift; sourceTree = "<group>"; };
+		73826EB127FC9CE1007F8F9E /* HomeDiceBagList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDiceBagList.swift; sourceTree = "<group>"; };
+		73826EB427FCB7C7007F8F9E /* SlideOverCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOverCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				73328CB727FC9248000CB2A5 /* Paper_DiceApp.swift */,
-				73328CB927FC9248000CB2A5 /* ContentView.swift */,
+				73328CCA27FC92D8000CB2A5 /* Views */,
 				73328CBB27FC924A000CB2A5 /* Assets.xcassets */,
-				73328CC027FC924A000CB2A5 /* Persistence.swift */,
-				73328CC227FC924A000CB2A5 /* Paper_Dice.xcdatamodeld */,
+				73328CCB27FC92F7000CB2A5 /* Data */,
 				73328CBD27FC924A000CB2A5 /* Preview Content */,
 			);
 			path = "Paper Dice";
@@ -71,6 +78,35 @@
 				73328CBE27FC924A000CB2A5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		73328CCA27FC92D8000CB2A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				73826EB327FCB734007F8F9E /* Home */,
+				73826EAF27FC9743007F8F9E /* DiceBagView.swift */,
+				73328CB927FC9248000CB2A5 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		73328CCB27FC92F7000CB2A5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				73328CC227FC924A000CB2A5 /* Paper_Dice.xcdatamodeld */,
+				73328CC027FC924A000CB2A5 /* Persistence.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		73826EB327FCB734007F8F9E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				73328CCC27FC938B000CB2A5 /* HomeView.swift */,
+				73826EB127FC9CE1007F8F9E /* HomeDiceBagList.swift */,
+				73826EB427FCB7C7007F8F9E /* SlideOverCard.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,8 +180,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				73328CC127FC924A000CB2A5 /* Persistence.swift in Sources */,
+				73826EB227FC9CE1007F8F9E /* HomeDiceBagList.swift in Sources */,
 				73328CBA27FC9248000CB2A5 /* ContentView.swift in Sources */,
+				73826EB027FC9743007F8F9E /* DiceBagView.swift in Sources */,
 				73328CB827FC9248000CB2A5 /* Paper_DiceApp.swift in Sources */,
+				73826EB527FCB7C7007F8F9E /* SlideOverCard.swift in Sources */,
+				73328CCD27FC938B000CB2A5 /* HomeView.swift in Sources */,
 				73328CC427FC924A000CB2A5 /* Paper_Dice.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
