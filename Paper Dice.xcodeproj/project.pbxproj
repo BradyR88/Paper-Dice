@@ -17,6 +17,7 @@
 		73826EB027FC9743007F8F9E /* DiceBagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73826EAF27FC9743007F8F9E /* DiceBagView.swift */; };
 		73826EB227FC9CE1007F8F9E /* HomeDiceBagList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73826EB127FC9CE1007F8F9E /* HomeDiceBagList.swift */; };
 		73826EB527FCB7C7007F8F9E /* SlideOverCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73826EB427FCB7C7007F8F9E /* SlideOverCard.swift */; };
+		73C91DAA27FCD15400D6C0E7 /* SlideOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C91DA927FCD15400D6C0E7 /* SlideOverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		73826EAF27FC9743007F8F9E /* DiceBagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceBagView.swift; sourceTree = "<group>"; };
 		73826EB127FC9CE1007F8F9E /* HomeDiceBagList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDiceBagList.swift; sourceTree = "<group>"; };
 		73826EB427FCB7C7007F8F9E /* SlideOverCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOverCard.swift; sourceTree = "<group>"; };
+		73C91DA927FCD15400D6C0E7 /* SlideOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				73826EB327FCB734007F8F9E /* Home */,
+				73826EB627FCD0D0007F8F9E /* SlideOver */,
 				73826EAF27FC9743007F8F9E /* DiceBagView.swift */,
 				73328CB927FC9248000CB2A5 /* ContentView.swift */,
 			);
@@ -104,9 +107,17 @@
 			children = (
 				73328CCC27FC938B000CB2A5 /* HomeView.swift */,
 				73826EB127FC9CE1007F8F9E /* HomeDiceBagList.swift */,
-				73826EB427FCB7C7007F8F9E /* SlideOverCard.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		73826EB627FCD0D0007F8F9E /* SlideOver */ = {
+			isa = PBXGroup;
+			children = (
+				73826EB427FCB7C7007F8F9E /* SlideOverCard.swift */,
+				73C91DA927FCD15400D6C0E7 /* SlideOverView.swift */,
+			);
+			path = SlideOver;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 				73328CBA27FC9248000CB2A5 /* ContentView.swift in Sources */,
 				73826EB027FC9743007F8F9E /* DiceBagView.swift in Sources */,
 				73328CB827FC9248000CB2A5 /* Paper_DiceApp.swift in Sources */,
+				73C91DAA27FCD15400D6C0E7 /* SlideOverView.swift in Sources */,
 				73826EB527FCB7C7007F8F9E /* SlideOverCard.swift in Sources */,
 				73328CCD27FC938B000CB2A5 /* HomeView.swift in Sources */,
 				73328CC427FC924A000CB2A5 /* Paper_Dice.xcdatamodeld in Sources */,

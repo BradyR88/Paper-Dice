@@ -10,10 +10,9 @@ import SwiftUI
 struct HomeView: View {
     
     @State var isNavigationActive = false
-    @State var isPopoverPresented = false
     
     var body: some View {
-        VStack {
+        ZStack (alignment: Alignment.top) {
             
             NavigationView {
                 
@@ -33,46 +32,12 @@ struct HomeView: View {
                 	
             }
             
+            SlideOverCard {
+                SlideOverView()
+            }
             
-            Button {
-                // this will pull up a card
-                isPopoverPresented = true
-            } label: {
-                ZStack {
-                    Rectangle()
-                        .cornerRadius(10)
-                        .foregroundColor(.orange)
-                        .shadow(radius: 8)
-                        .edgesIgnoringSafeArea(.bottom)
-                    .frame(height: 66)
-                    
-                    Text("Test")
-                        .bold()
-                        .font(.largeTitle)
-                        .foregroundColor(.secondary)
-                }
-                    
-            }
-            .popover(isPresented: $isPopoverPresented) {
-                ZStack {
-                    Rectangle()
-                        .cornerRadius(10)
-                        .foregroundColor(.orange)
-                        .shadow(radius: 8)
-                        .edgesIgnoringSafeArea(.bottom)
-                    
-                    VStack {
-                        Text("Test")
-                            .bold()
-                            .font(.largeTitle)
-                            .foregroundColor(.secondary)
-                            .padding()
-                        Spacer()
-                    }
-                }
-            }
-
         }
+        .edgesIgnoringSafeArea(.vertical)
     }
 }
 
